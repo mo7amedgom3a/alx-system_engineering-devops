@@ -16,8 +16,8 @@ frontend  mohamed-frontend
         default_backend mohamed-backend
 backend mohamed-backend
         balance roundrobin
-        server 416412-web-01 54.144.146.187:80 check
-        server 416412-web-02 54.90.13.227:80 check
+        server 416412-web-01 54.236.48.164:80 check
+        server 416412-web-02 3.84.158.242:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
