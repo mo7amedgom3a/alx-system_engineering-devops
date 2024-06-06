@@ -23,7 +23,7 @@ def top_ten(subreddit):
     results = response.json()
 
     try:
-        my_data = results.get('data').get('children')
+        my_data = results['data']['children']
 
         for i in my_data:
             print(i.get('data').get('title'))
